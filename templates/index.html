@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="ru"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+
+        <title>Anime</title>
+        
+    </head>
+
+    <body>
+            <div id="serials-grid">
+                {% for serial in serials %}
+                <div class="serial">
+                    <div id="inner-header">
+                        <div id="photo">
+                            <img src="{{ serial['cover'] }}" loading="lazy" alt="{{ serial['nameEN'] }}">
+                        </div>
+                        <div id="text">
+                            <h2>{{ serial['nameRU'] }}</h2>
+                            <h3>{{ serial['nameEN'] }}<br></h3>
+                            <p>
+                                Год: {{ serial['year'] }}
+                                Тип: {{ serial['type'] }}<br></p>
+                        </div>
+                        <div id="button"> 
+                            <button id="notifications">Оповещение</button>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+    
+    <script scr="app.py"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>    
+
+
+    </body>
+</html>

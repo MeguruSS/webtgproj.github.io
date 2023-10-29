@@ -1,0 +1,118 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+
+}
+
+
+#serials-grid {
+    display: grid;
+    padding: 0;
+    margin: 0;
+    width: 390px;
+
+
+
+    
+
+
+
+}
+
+#inner-header {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 180px 200px;
+    grid-gap: 5px;
+    grid-template-rows: 210px  50px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    
+
+
+
+}
+
+#photo img {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: initial;
+    height: 55%;
+
+
+}
+#photo {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+    width: 300px;
+    height: 420px;
+    display: grid;
+    
+
+}
+
+#text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    display: grid;
+    height: 60%;
+    width: 95%;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+
+
+}
+
+h1,h2 {
+    padding: 0px;
+    margin: 0px;
+}
+
+#button {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    
+    display: grid;
+    border: 0;
+    height: 45px;
+    width: 180px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+button {
+    
+    font-size: 15px;
+    padding: 5;
+    border-radius: 5px;
+    border: 0;
+    height: 45px;
+    width: 180px;
+    cursor: pointer;
+    transition: all 500ms ease;
+    background: var(--tg-theme-button-text-color);
+    color: var(--tg-theme-button-color);
+}
+
+button:hover {
+    background: var(--tg-theme-secondary-bg-color);
+}
